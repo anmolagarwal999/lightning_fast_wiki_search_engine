@@ -1,5 +1,5 @@
 # Lightning Fast Wiki Search
-- Anmol Agarwal, 2019101068
+- Anmol Agarwal
 
 ## Description
 This is a Wikipedia indexer and search engine, that uses the merge-sort algorithm to **create and store an inverted index** from a Wikipedia XML dump (tested on the recently released **85GB dump** of Wikipedia). 
@@ -60,154 +60,174 @@ Fields supported for field queries are:
 * A `:` is always preceeded by a valid category representing character ie one of [t,i,b,c,l,r]
 
 ### Performance sample
+
 Number of queries being asked is  10
 Query to be answered:= `jaws blockbuster thriller shark`
 
-49549 -> Jaws (film)
-3208654 -> Jaws (novel)
-682845 -> Jaws 3-D
-325702 -> Jaws: The Revenge
-5232167 -> Shark Jaws
-224654 -> Jaws 2
-9592054 -> Ghost Shark 2: Urban Jaws
-6262926 -> Jaws (franchise)
-909824 -> Peter Benchley
-19203528 -> House Shark
+* 9549 -> Jaws (film)
+* 208654 -> Jaws (novel)
+* 82845 -> Jaws 3-D
+* 25702 -> Jaws: The Revenge
+* 232167 -> Shark Jaws
+* 24654 -> Jaws 2
+* 592054 -> Ghost Shark 2: Urban Jaws
+* 262926 -> Jaws (franchise)
+* 09824 -> Peter Benchley
+* 9203528 -> House Shark
 
 T:  0.490723
+
 ##########################################################
+
 Query to be answered:= `b:dystopian george orwell nazi propaganda c:british political novels censored books`
 
-7617654 -> Nineteen Eighty-Four
-111 -> Animal Farm
-7486 -> George Orwell
-24155 -> Brave New World
-12716 -> Mein Kampf
-32936 -> Down and Out in Paris and London
-374878 -> Darkness at Noon
-245 -> A Clockwork Orange (novel)
-225552 -> Burmese Days
-141133 -> It Can't Happen Here
+* 617654 -> Nineteen Eighty-Four
+* 11 -> Animal Farm
+* 486 -> George Orwell
+* 4155 -> Brave New World
+* 2716 -> Mein Kampf
+* 2936 -> Down and Out in Paris and London
+* 74878 -> Darkness at Noon
+* 45 -> A Clockwork Orange (novel)
+* 25552 -> Burmese Days
+* 41133 -> It Can't Happen Here
 
 T:  7.892481
+
 ##########################################################
+
 Query to be answered:= `i:Harper Lee United States 281 r:Virginia`
 
-16827 -> Robert E. Lee
-137558 -> Harper Lee
-35248 -> Harpers Ferry, West Virginia
-48625 -> To Kill a Mockingbird
-50994 -> John Brown (abolitionist)
-1195779 -> Arlington House, The Robert E. Lee Memorial
-32374 -> Battle of Fredericksburg
-1382377 -> Harper v. Virginia State Board of Elections
-252008 -> Henry Lee III
-178023 -> Washington and Lee University
+* 6827 -> Robert E. Lee
+* 37558 -> Harper Lee
+* 5248 -> Harpers Ferry, West Virginia
+* 8625 -> To Kill a Mockingbird
+* 0994 -> John Brown (abolitionist)
+* 195779 -> Arlington House, The Robert E. Lee Memorial
+* 2374 -> Battle of Fredericksburg
+* 382377 -> Harper v. Virginia State Board of Elections
+* 52008 -> Henry Lee III
+* 78023 -> Washington and Lee University
 
 T:  7.541198
+
 ##########################################################
+
 Query to be answered:= `t:neural b:NST deep neural networks manipulate image stylization artistic style r:visual recognition c:algorithms`
 
-18755622 -> Neural Style Transfer
-8996046 -> Types of artificial neural networks
-13983 -> Artificial neural network
-12854015 -> Convolutional neural network
-10384172 -> Deep learning
-14849617 -> DeepDream
-937860 -> Recurrent neural network
-948579 -> Neural network
-19264938 -> History of artificial neural networks
-1310365 -> Cellular neural network
+* 8755622 -> Neural Style Transfer
+* 996046 -> Types of artificial neural networks
+* 3983 -> Artificial neural network
+* 2854015 -> Convolutional neural network
+* 0384172 -> Deep learning
+* 4849617 -> DeepDream
+* 37860 -> Recurrent neural network
+* 48579 -> Neural network
+* 9264938 -> History of artificial neural networks
+* 310365 -> Cellular neural network
 
 T:  6.465407
+
 ##########################################################
+
 Query to be answered:= `t:hidden b:Markov process drawing balls weather guessing inference speech recognition time series r:maximum likelihood l:revealing introduction c:bioinformatics`
 
-66159 -> Hidden Markov model
-493781 -> Baum–Welch algorithm
-40821 -> Markov chain
-2877601 -> Bayesian inference in phylogeny
-103619 -> Maximum likelihood estimation
-32818 -> Bayesian inference
-128979 -> Kalman filter
-4151536 -> Approximate Bayesian computation
-12229394 -> List of RNA-Seq bioinformatics tools
-30038 -> Likelihood function
+* 6159 -> Hidden Markov model
+* 93781 -> Baum–Welch algorithm
+* 0821 -> Markov chain
+* 877601 -> Bayesian inference in phylogeny
+* 03619 -> Maximum likelihood estimation
+* 2818 -> Bayesian inference
+* 28979 -> Kalman filter
+* 151536 -> Approximate Bayesian computation
+* 2229394 -> List of RNA-Seq bioinformatics tools
+* 0038 -> Likelihood function
 
 T:  17.746295
+
 ##########################################################
+
 Query to be answered:= `Tony Appleton`
 
-17910662 -> Tony Appleton
-110812 -> Appleton, Wisconsin
-3110593 -> John Appleton
-13591865 -> James Appleton
-2252680 -> D. Appleton & Company
-1368122 -> Thomas Gold Appleton
-1368120 -> Nathan Appleton
-2146657 -> Daniel Appleton
-18255878 -> Mount Appleton
-3593847 -> Samuel Appleton (merchant)
+* 7910662 -> Tony Appleton
+* 10812 -> Appleton, Wisconsin
+* 110593 -> John Appleton
+* 3591865 -> James Appleton
+* 252680 -> D. Appleton & Company
+* 368122 -> Thomas Gold Appleton
+* 368120 -> Nathan Appleton
+* 146657 -> Daniel Appleton
+* 8255878 -> Mount Appleton
+* 593847 -> Samuel Appleton (merchant)
 
 T:  1.147892
+
 ##########################################################
+
 Query to be answered:= `t:messi b:argentina barcelona most career goals i:forward l:FIFA c:2020 World Cup players olympic medalists`
 
-1150110 -> Lionel Messi
-322859 -> Ronaldinho
-5205168 -> Neymar
-377311 -> Cristiano Ronaldo
-1681864 -> Sergio Agüero
-3104330 -> Luis Suárez
-6832681 -> Alex Morgan
-8473459 -> Johan Cruyff
-689161 -> Javier Mascherano
-1719116 -> Dani Alves
+* 150110 -> Lionel Messi
+* 22859 -> Ronaldinho
+* 205168 -> Neymar
+* 77311 -> Cristiano Ronaldo
+* 681864 -> Sergio Agüero
+* 104330 -> Luis Suárez
+* 832681 -> Alex Morgan
+* 473459 -> Johan Cruyff
+* 89161 -> Javier Mascherano
+* 719116 -> Dani Alves
 
 T:  14.230851
+
 ##########################################################
+
 Query to be answered:= `t:star i:Bradley Cooper Lady Gaga 1954 1976 136 b:country rock SHALLOW suicide by hanging Sam Elliott r:remake c:warner l:rotten tomatoes`
 
-14513705 -> A Star Is Born (2018 film)
-18325384 -> Shallow (Lady Gaga and Bradley Cooper song)
-5948153 -> Lady Gaga
-18410539 -> List of accolades received by A Star Is Born (2018 film)
-18066061 -> A Star Is Born (2018 soundtrack)
-18442668 -> Maybe It's Time
-18358404 -> I'll Never Love Again
-1697385 -> A Star Is Born (1976 film)
-18305471 -> Always Remember Us This Way
-12567402 -> American Sniper
+* 4513705 -> A Star Is Born (2018 film)
+* 8325384 -> Shallow (Lady Gaga and Bradley Cooper song)
+* 948153 -> Lady Gaga
+* 8410539 -> List of accolades received by A Star Is Born (2018 film)
+* 8066061 -> A Star Is Born (2018 soundtrack)
+* 8442668 -> Maybe It's Time
+* 8358404 -> I'll Never Love Again
+* 697385 -> A Star Is Born (1976 film)
+* 8305471 -> Always Remember Us This Way
+* 2567402 -> American Sniper
 
 T:  10.880973
+
 ##########################################################
+
 Query to be answered:= `i:740 feet December 1903 silent the great train c:american silent new jersey train robbery`
 
-48904 -> The Great Train Robbery (1903 film)
-112636 -> Great Train Robbery (1963)
-13079376 -> The Great Train Robbery (2013 TV series)
-3403524 -> The Great K & A Train Robbery
-89010 -> New Brunswick, New Jersey
-12244572 -> The Great Train Robbery (1941 film)
-269641 -> Ronnie Biggs
-68621 -> Camden, New Jersey
-88613 -> Fair Lawn, New Jersey
-1992940 -> New Brunswick station
+* 8904 -> The Great Train Robbery (1903 film)
+* 12636 -> Great Train Robbery (1963)
+* 3079376 -> The Great Train Robbery (2013 TV series)
+* 403524 -> The Great K & A Train Robbery
+* 9010 -> New Brunswick, New Jersey
+* 2244572 -> The Great Train Robbery (1941 film)
+* 69641 -> Ronnie Biggs
+* 8621 -> Camden, New Jersey
+* 8613 -> Fair Lawn, New Jersey
+* 992940 -> New Brunswick station
 
 T:  12.645168
+
 ##########################################################
+
 Query to be answered:= `Hitchcock smith 1941 charles halton 743000 adaptations normal krasna`
-872282 -> Mr. & Mrs. Smith (1941 film)
-227 -> Alfred Hitchcock
-2129498 -> Norman Krasna
-13105397 -> The Man with Blond Hair
-49669 -> Suspicion (1941 film)
-3011247 -> Thomas Hitchcock Sr.
-15574 -> Psycho (1960 film)
-167651 -> Alfred Hitchcock Presents
-1805375 -> The 39 Steps (1935 film)
-782115 -> The Devil and Miss Jones
+* 72282 -> Mr. & Mrs. Smith (1941 film)
+* 27 -> Alfred Hitchcock
+* 129498 -> Norman Krasna
+* 3105397 -> The Man with Blond Hair
+* 9669 -> Suspicion (1941 film)
+* 011247 -> Thomas Hitchcock Sr.
+* 5574 -> Psycho (1960 film)
+* 67651 -> Alfred Hitchcock Presents
+* 805375 -> The 39 Steps (1935 film)
+* 82115 -> The Devil and Miss Jones
 
 T:  6.592251
+
 ##########################################################
 

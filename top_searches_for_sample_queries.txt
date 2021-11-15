@@ -14,6 +14,7 @@ Query to be answered:= `jaws blockbuster thriller shark`
 
 T:  0.490723
 ##########################################################
+
 Query to be answered:= `b:dystopian george orwell nazi propaganda c:british political novels censored books`
 
 7617654 -> Nineteen Eighty-Four
@@ -29,6 +30,7 @@ Query to be answered:= `b:dystopian george orwell nazi propaganda c:british poli
 
 T:  7.892481
 ##########################################################
+
 Query to be answered:= `i:Harper Lee United States 281 r:Virginia`
 
 16827 -> Robert E. Lee
@@ -44,6 +46,7 @@ Query to be answered:= `i:Harper Lee United States 281 r:Virginia`
 
 T:  7.541198
 ##########################################################
+
 Query to be answered:= `t:neural b:NST deep neural networks manipulate image stylization artistic style r:visual recognition c:algorithms`
 
 18755622 -> Neural Style Transfer
@@ -59,6 +62,7 @@ Query to be answered:= `t:neural b:NST deep neural networks manipulate image sty
 
 T:  6.465407
 ##########################################################
+
 Query to be answered:= `t:hidden b:Markov process drawing balls weather guessing inference speech recognition time series r:maximum likelihood l:revealing introduction c:bioinformatics`
 
 66159 -> Hidden Markov model
@@ -74,6 +78,7 @@ Query to be answered:= `t:hidden b:Markov process drawing balls weather guessing
 
 T:  17.746295
 ##########################################################
+
 Query to be answered:= `Tony Appleton`
 
 17910662 -> Tony Appleton
@@ -89,6 +94,7 @@ Query to be answered:= `Tony Appleton`
 
 T:  1.147892
 ##########################################################
+
 Query to be answered:= `t:messi b:argentina barcelona most career goals i:forward l:FIFA c:2020 World Cup players olympic medalists`
 
 1150110 -> Lionel Messi
@@ -104,6 +110,7 @@ Query to be answered:= `t:messi b:argentina barcelona most career goals i:forwar
 
 T:  14.230851
 ##########################################################
+
 Query to be answered:= `t:star i:Bradley Cooper Lady Gaga 1954 1976 136 b:country rock SHALLOW suicide by hanging Sam Elliott r:remake c:warner l:rotten tomatoes`
 
 14513705 -> A Star Is Born (2018 film)
@@ -119,6 +126,7 @@ Query to be answered:= `t:star i:Bradley Cooper Lady Gaga 1954 1976 136 b:countr
 
 T:  10.880973
 ##########################################################
+
 Query to be answered:= `i:740 feet December 1903 silent the great train c:american silent new jersey train robbery`
 
 48904 -> The Great Train Robbery (1903 film)
@@ -134,6 +142,7 @@ Query to be answered:= `i:740 feet December 1903 silent the great train c:americ
 
 T:  12.645168
 ##########################################################
+
 Query to be answered:= `Hitchcock smith 1941 charles halton 743000 adaptations normal krasna`
 872282 -> Mr. & Mrs. Smith (1941 film)
 227 -> Alfred Hitchcock
@@ -148,3 +157,4 @@ Query to be answered:= `Hitchcock smith 1941 charles halton 743000 adaptations n
 
 T:  6.592251
 ##########################################################
+
